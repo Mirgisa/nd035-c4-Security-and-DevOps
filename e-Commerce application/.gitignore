@@ -1,0 +1,8 @@
+# Ignore Maven / Gradle build outputs
+target/
+*.war
+
+# Optional: ignore IDE files
+*.iml
+.idea/
+.vscode/
