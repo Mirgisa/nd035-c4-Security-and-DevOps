@@ -1,0 +1,51 @@
+<configuration>
+
+    <!-- Console JSON logs -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp/>
+                <loggerName/>
+                <logLevel/>
+                <message/>
+                <mdc/>
+                <context/>
+                <stackTrace/>
+                <arguments/>
+                <provider class="net.logstash.logback.composite.GlobalCustomFieldsJsonProvider">
+                    <customFields>{"app":"ecommerce-api","env":"dev"}</customFields>
+                </provider>
+            </providers>
+        </encoder>
+    </appender>
+
+    <!-- Splunk HEC appender -->
+    <appender name="SPLUNK" class="com.splunk.logging.HttpEventCollectorLogbackAppender">
+        <url>${SPLUNK_HEC_URL:-https://localhost:8088}</url>
+        <token>${SPLUNK_HEC_TOKEN:-f0a2c4a9-f50e-4b70-a832-e431199edab3}</token>
+        <index>${SPLUNK_INDEX:-ecommerce}</index>
+        <sourcetype>java</sourcetype>
+        <source>springboot-app</source>
+        <disableCertificateValidation>${SPLUNK_HEC_DISABLE_CERT_VALIDATION:-true}</disableCertificateValidation>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp/>
+                <loggerName/>
+                <logLevel/>
+                <message/>
+                <mdc/>
+                <context/>
+                <stackTrace/>
+                <arguments/>
+                <provider class="net.logstash.logback.composite.GlobalCustomFieldsJsonProvider">
+                    <customFields>{"app":"ecommerce-api","env":"dev"}</customFields>
+                </provider>
+            </providers>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="SPLUNK"/>
+    </root>
+</configuration>
