@@ -1,0 +1,98 @@
+[INFO] Starting EcommerceApplication using Java 21.0.3 with PID 11416 (D:\AccentureFile\UDACITYCOURSPROJECT\SECURITY AND DEVOPS\Security_and_DevOps_Project\nd035-c4-Security-and-DevOps\e-Commerce application\target\classes started by Mirgisa in D:\AccentureFile\UDACITYCOURSPROJECT\SECURITY AND DEVOPS\Security_and_DevOps_Project\nd035-c4-Security-and-DevOps\e-Commerce application)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+[INFO] Tomcat initialized with port 8081 (http)
+[INFO] Initializing ProtocolHandler ["http-nio-8081"]
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 2159 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.5.3.Final
+[INFO] HHH000026: Second-level cache disabled
+[INFO] No LoadTimeWeaver setup: ignoring JPA class transformer
+[WARN] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[INFO] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO] Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Starting ProtocolHandler ["http-nio-8081"]
+[INFO] Tomcat started on port 8081 (http) with context path '/'
+[INFO] Started EcommerceApplication in 6.432 seconds (process running for 7.16)
+[INFO] Hello Test Splunk! Spring Boot log test.
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 3 ms
+[INFO] CreateUser attempt event=CreateUser
+[INFO] CreateUser success event=CreateUser
+[INFO] OrderSubmit attempt event=OrderSubmit
+[INFO] OrderSubmit success event=OrderSubmit
+[INFO] CreateUser attempt event=CreateUser
+[INFO] CreateUser success event=CreateUser
+[INFO] OrderSubmit attempt event=OrderSubmit
+[INFO] OrderSubmit success event=OrderSubmit
+[INFO] CreateUser attempt event=CreateUser
+[WARN] SQL Error: 23505, SQLState: 23505
+[ERROR] Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_27 ON PUBLIC.""USER""(USERNAME NULLS FIRST) VALUES ( /* 2 */ 'mirgisa1' )"; SQL statement:
+insert into user (cart_id,password,salt,username,id) values (?,?,?,?,default) [23505-224]
+[ERROR] Unhandled exception event=Exception
+[INFO] OrderSubmit attempt event=OrderSubmit
+[INFO] OrderSubmit success event=OrderSubmit
+[INFO] OrderSubmit attempt event=OrderSubmit
+[WARN] OrderSubmit failure event=OrderSubmit
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
+[INFO] Starting EcommerceApplication using Java 21.0.3 with PID 15404 (D:\AccentureFile\UDACITYCOURSPROJECT\SECURITY AND DEVOPS\Security_and_DevOps_Project\nd035-c4-Security-and-DevOps\e-Commerce application\target\classes started by Mirgisa in D:\AccentureFile\UDACITYCOURSPROJECT\SECURITY AND DEVOPS\Security_and_DevOps_Project\nd035-c4-Security-and-DevOps\e-Commerce application)
+[INFO] No active profile set, falling back to 1 default profile: "default"
+[INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+[INFO] Tomcat initialized with port 8081 (http)
+[INFO] Initializing ProtocolHandler ["http-nio-8081"]
+[INFO] Starting service [Tomcat]
+[INFO] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[INFO] Initializing Spring embedded WebApplicationContext
+[INFO] Root WebApplicationContext: initialization completed in 1803 ms
+[INFO] HikariPool-1 - Starting...
+[INFO] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+[INFO] HikariPool-1 - Start completed.
+[INFO] H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+[INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] HHH000412: Hibernate ORM core version 6.5.3.Final
+[INFO] HHH000026: Second-level cache disabled
+[INFO] No LoadTimeWeaver setup: ignoring JPA class transformer
+[WARN] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[INFO] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO] Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+[WARN] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+[WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] Starting ProtocolHandler ["http-nio-8081"]
+[INFO] Tomcat started on port 8081 (http) with context path '/'
+[INFO] Started EcommerceApplication in 7.048 seconds (process running for 7.825)
+[INFO] Hello Test Splunk! Spring Boot log test.
+[INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] Initializing Servlet 'dispatcherServlet'
+[INFO] Completed initialization in 2 ms
+[INFO] CreateUser attempt event=CreateUser
+[INFO] CreateUser success event=CreateUser
+[INFO] OrderSubmit attempt event=OrderSubmit
+[INFO] OrderSubmit success event=OrderSubmit
+[WARN] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m24s880ms584µs100ns).
+[WARN] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h53m6s27ms631µs800ns).
+[WARN] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m18s909ms664µs100ns).
+[WARN] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m41s347ms222µs300ns).
+[INFO] CreateUser attempt event=CreateUser
+[WARN] SQL Error: 42104, SQLState: 42S04
+[ERROR] Table "CART" not found (this database is empty); SQL statement:
+insert into cart (total,id) values (?,default) [42104-224]
+[ERROR] Unhandled exception event=Exception
+[INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] HikariPool-1 - Shutdown initiated...
+[INFO] HikariPool-1 - Shutdown completed.
